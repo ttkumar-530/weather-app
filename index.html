@@ -12,7 +12,8 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: url('https://res.cloudinary.com/db4mfejws/image/upload/v1736058452/cld-sample-2.jpg') ;
+            
         }
         .container {
             text-align: center;
@@ -69,22 +70,63 @@
             font-weight: bold;
             color: #007bff;
         }
+        .info-text1 {
+            color: #28a745; 
+        }
+        .info-text2 {
+            color: #dc3545; 
+        }
+        .info-text3 {
+            color: #ffc107; 
+        }
+        .info-text4 {
+            color: #17a2b8; 
+        }
+        .info-text5 {
+            color: #6610f2; 
+        }
+        .info-text6 {
+            color: #fd7e14; 
+        }
+        .info-text7{
+            color: #28a745; 
+        }
         .latitude{
-            color:#fd7e14;
-            font-family: monospace;
-            font-size: 20px;
+            color:#623109;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+
+        }
+        .latitude:hover{
+            color:#d50a0a;
+            font-family: 'Courier New', Courier, monospace;
         }
         .longitude{
-            color:#fd7e14;
-            font-family: monospace;
-            font-size: 20px;
+            color:#623109;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            font-size: 30px;
           }       
+          .longitude:hover{
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .myh1:hover{
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .submit:hover{
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff;
+
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Air Quality Checker</h1>
+    <h1 class="myh1">Air Quality Checker</h1>
     <form class="form" id="form">
         <div class="latitude">
             <label for="latitude">Latitude: </label>
@@ -94,17 +136,17 @@
             <label for="longitude">Longitude: </label>
             <input type="text" id="longitude" name="longitude" required step="any">
         </div>
-        <button type="submit" id="submit">Check Air Quality</button>
+        <button type="submit" id="submit" class="submit">Check Air Quality</button>
     </form>
     <div class="info" id="result">
     <h1 class="title">Air Quality</h1>
-    <p class="info-text">AQI: <span id="aqi">--</span></p>
-    <p class="info-text">CO: <span id="co">--</span></p>
-    <p class="info-text">NO2: <span id="no2">--</span></p>
-    <p class="info-text">PM2.5: <span id="pm25">--</span></p>
-    <p class="info-text">O3: <span id="o3">--</span></p>
-    <p class="info-text">PM10: <span id="pm10">--</span></p>
-    <p class="info-text">SO2: <span id="so2">--</span></p>
+    <p class="info-text1">AQI: <span id="aqi">--</span></p>
+    <p class="info-text2">CO: <span id="co">--</span></p>
+    <p class="info-text3">NO2: <span id="no2">--</span></p>
+    <p class="info-text4">PM2.5: <span id="pm25">--</span></p>
+    <p class="info-text5">O3: <span id="o3">--</span></p>
+    <p class="info-text6">PM10: <span id="pm10">--</span></p>
+    <p class="info-text7">SO2: <span id="so2">--</span></p>
     </div>
 </div>
 <script src="index.js"></script>
